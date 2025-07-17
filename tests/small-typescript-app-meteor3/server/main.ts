@@ -1,6 +1,10 @@
 import { Meteor } from 'meteor/meteor';
 import { LinksCollection } from '/imports/api/links';
 import { exported } from './tla-test';
+import { sharedString, sharedObject } from '/imports/exported';
+
+console.log(sharedString);
+console.log(sharedObject.server);
 
 async function insertLink(title: string, url: string) {
   await LinksCollection.insertAsync({ title, url, createdAt: new Date() });
