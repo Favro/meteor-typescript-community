@@ -47,8 +47,11 @@ typings/
 # TypeScript cache
 *.tsbuildinfo
 
-# Optional npm cache directory
-.npm
+# What npm installs in a Meteor package's .npm directories, whose package.json
+# and package-lock.json belong in Git
+.npm/**/node_modules
+.npm/**/*-new-*/
+.npm/**/.*-garbage-*/
 
 # Optional eslint cache
 .eslintcache

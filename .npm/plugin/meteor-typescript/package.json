@@ -1,0 +1,7 @@
+{
+  "name": "meteor-typescript",
+  "private": true,
+  "dependencies": {
+    "typescript": "6.0.2"
+  }
+}
